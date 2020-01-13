@@ -8,3 +8,7 @@ $ npm install --save express
 
 create a server folder with a server.js file with a basic express setup
 
+install webpack
+
+npm install --save-dev webpack webpack-cli
+
