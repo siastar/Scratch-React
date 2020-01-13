@@ -1,1 +1,1 @@
-console.log('message: launching express server...');
+console.log('message: starting express server... ');

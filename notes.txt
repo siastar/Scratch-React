@@ -4,11 +4,50 @@ boilerplate for a Node Webpack React Express Sass Application
 
 git init
 npm init
+
+------------------------------------
+install express
+
 $ npm install --save express
 
 create a server folder with a server.js file with a basic express setup
 
+------------------------------------
 install webpack
 
-npm install --save-dev webpack webpack-cli
+$ npm install --save-dev webpack webpack-cli
+
+add 
+"build": "webpack --mode production"
+to start script
+
+------------------------------------
+install babel
+$ npm install --save-dev @babel/core @babel/preset-env @babel/preset-react babel-loader
+
+create a babel config file .babelrc
+
+------------------------------------
+install react and react-dom
+$ npm install react react-dom
+
+create src/index.html with "root" id for react rendering
+
+------------------------------------
+install html-webpack-plugin
+https://webpack.js.org/plugins/html-webpack-plugin/
+The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles.
+This is especially useful for webpack bundles that include a hash in the filename which
+changes every compilation. You can either let the plugin generate an HTML file for you,
+supply your own template using lodash templates, or use your own loader.
+
+$ npm install --save-dev html-webpack-plugin
+https://webpack.js.org/plugins/html-webpack-plugin/
+
+------------------------------------
+install nodemon
+
+$ npm install nodemon
+
+
 

@@ -3,24 +3,34 @@
   "version": "1.0.0",
   "description": "",
   "main": "",
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node message.js && node server/server.js",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "server": "node message.js && nodemon server/express.js",
+    "dev": "concurrently \"npm run server\" \"npm run webpack\""  
   },
-
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-
+  "author": "siastar.me",
+  "license": "GPL3",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
-
   "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.0.2",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
-
 }
